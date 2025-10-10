@@ -112,7 +112,7 @@ Verify validity of the token:
 
 ```crystal
 prosopo_token = params["procaptcha-response"]
-ip_address = request.remote_address
+ip_address = request.remote_address # optional
 
 Prosopo.verify?(prosopo_token, ip_address)
 # => true
