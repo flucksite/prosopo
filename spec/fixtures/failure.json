@@ -1,0 +1,12 @@
+{
+  "verified": false,
+  "status": "verification_failed",
+  "errors": [
+    "invalid-token",
+    "missing-token",
+    "invalid-secret",
+    "missing-secret",
+    "token-expired",
+    "token-already-used"
+  ]
+}
