@@ -1,6 +1,6 @@
 # prosopo
 
-A Prosopo Procaptcha verifier for Crystal apps.
+A Prosopo captcha verifier for Crystal apps.
 
 > **Note** The original repository is hosted at [https://codeberg.org/fluck/prosopo](https://codeberg.org/fluck/prosopo).
 
@@ -103,7 +103,7 @@ underscores converted to hyphens in the attribute names:
 ```
 
 Look at the [Prosopo
-docs](https://docs.prosopo.io/en/basics/integration/)
+docs](https://docs.prosopo.io/en/basics/client-side-rendering/#data-attributes)
 for all the available configuration options.
 
 ### Back-end
