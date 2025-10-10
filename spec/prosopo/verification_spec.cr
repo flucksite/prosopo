@@ -12,6 +12,17 @@ describe Prosopo do
       result.errors.should eq([] of String)
     end
 
+    it "successfully verifies a valid token with a pro account" do
+      WebMock.stub(:post, "https://api.prosopo.io/siteverify")
+        .to_return(body: read_fixture("success-pro.json").gets_to_end)
+
+      result = Prosopo.verify("GOOD").as(Prosopo::Result)
+      result.verified?.should be_truthy
+      result.status.should eq("verified")
+      result.errors.should eq([] of String)
+      result.score.should eq(0.1)
+    end
+
     it "successfully verifies an invalid token" do
       WebMock.stub(:post, "https://api.prosopo.io/siteverify")
         .to_return(body: read_fixture("failure.json").gets_to_end)
