@@ -2,7 +2,8 @@
 
 A Prosopo captcha verifier for Crystal apps.
 
-> **Note** The original repository is hosted at [https://codeberg.org/fluck/prosopo](https://codeberg.org/fluck/prosopo).
+> [!NOTE]
+> The original repository is hosted at [https://codeberg.org/fluck/prosopo](https://codeberg.org/fluck/prosopo).
 
 ## Installation
 
